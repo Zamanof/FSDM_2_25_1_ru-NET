@@ -1,11 +1,21 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.13.35825.156 d17.13
+VisualStudioVersion = 17.13.35825.156
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NET 01. First Program (Old version)", "NET 01. First Program (Old version)\NET 01. First Program (Old version).csproj", "{0687F77E-9BDC-40DC-A293-21CF0B86FB55}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NET 01. First Program (Top Level Statement)", "NET 01. First Program (Top Level Statement)\NET 01. First Program (Top Level Statement).csproj", "{5DE77075-1EAF-4680-95F3-8C1AB0A59226}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NET 01", "NET 01", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NET 02", "NET 02", "{0549CDB3-7D61-4D40-BFDA-425880939889}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NET 02. Data Types", "NET 02. Data Types\NET 02. Data Types.csproj", "{60BFC47A-213C-4E2D-B7E4-0E92FCCAA6B5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NET 02. Variables", "NET 02. Variables\NET 02. Variables.csproj", "{913F9C70-CB4C-4CE4-B6D0-88AE00E77BE6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NET 02. Input Output", "NET 02. Input Output\NET 02. Input Output.csproj", "{88EEF743-5265-4FD9-8708-4BB11A87509C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,9 +31,28 @@ Global
 		{5DE77075-1EAF-4680-95F3-8C1AB0A59226}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5DE77075-1EAF-4680-95F3-8C1AB0A59226}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5DE77075-1EAF-4680-95F3-8C1AB0A59226}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60BFC47A-213C-4E2D-B7E4-0E92FCCAA6B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60BFC47A-213C-4E2D-B7E4-0E92FCCAA6B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60BFC47A-213C-4E2D-B7E4-0E92FCCAA6B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60BFC47A-213C-4E2D-B7E4-0E92FCCAA6B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{913F9C70-CB4C-4CE4-B6D0-88AE00E77BE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{913F9C70-CB4C-4CE4-B6D0-88AE00E77BE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{913F9C70-CB4C-4CE4-B6D0-88AE00E77BE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{913F9C70-CB4C-4CE4-B6D0-88AE00E77BE6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88EEF743-5265-4FD9-8708-4BB11A87509C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88EEF743-5265-4FD9-8708-4BB11A87509C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88EEF743-5265-4FD9-8708-4BB11A87509C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88EEF743-5265-4FD9-8708-4BB11A87509C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0687F77E-9BDC-40DC-A293-21CF0B86FB55} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{5DE77075-1EAF-4680-95F3-8C1AB0A59226} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{60BFC47A-213C-4E2D-B7E4-0E92FCCAA6B5} = {0549CDB3-7D61-4D40-BFDA-425880939889}
+		{913F9C70-CB4C-4CE4-B6D0-88AE00E77BE6} = {0549CDB3-7D61-4D40-BFDA-425880939889}
+		{88EEF743-5265-4FD9-8708-4BB11A87509C} = {0549CDB3-7D61-4D40-BFDA-425880939889}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7691A36B-2421-4442-A372-20EACDBDE4C2}
