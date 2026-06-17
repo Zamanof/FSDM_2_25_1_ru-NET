@@ -6,5 +6,7 @@ namespace NET_05._WinForm_app__example_for_partial_class_
         {
             InitializeComponent();
         }
+
+        
     }
 }
