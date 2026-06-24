@@ -20,7 +20,7 @@ class Derived: Base
         :this(someProperty, 0, 0)
     {
         SomeProperty = someProperty;
-        //    Console.WriteLine("Derived class constructor - public Derived(string someProperty)");
+        //Console.WriteLine("Derived class constructor - public Derived(string someProperty)");
     }
     public Derived()
         :this(string.Empty, 0, 0)
@@ -30,15 +30,27 @@ class Derived: Base
     public Derived(string someProperty, int field1, int field2)
         :base(field1, field2)
     {
-        SomeProperty = someProperty; 
+        SomeProperty = someProperty;
         //Console.WriteLine("Derived class constructor public - Derived(string someProperty, int field1, int field2)");
     }
 
     public void Show()
     {
+        Console.WriteLine("Derived show");
         base.Show();
         Console.WriteLine(SomeProperty);
     }
+
+    public void DerivedBar()
+    {
+        Bar();
+    }
+
+    public void Bar()
+    {
+        Console.WriteLine("Derived class private method Bar()");
+    }
+
     public override string ToString()
     {
         return $"SomeProperty: {SomeProperty} {base.ToString()}";

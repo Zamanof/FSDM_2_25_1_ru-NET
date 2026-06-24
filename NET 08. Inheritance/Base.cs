@@ -32,8 +32,13 @@ class Base
     public void Show()
         => Console.WriteLine($"Base show() -> Field1 = {Field1}, field2 = {field2}");
 
-    private void Foo() { Console.WriteLine("Private method Foo()"); }
-    public void Bar() { }
+    private void Foo() { 
+        Console.WriteLine("Base class Private method Foo()"); 
+    }
+    public void Bar() {
+        Console.WriteLine("Base class Protected method Bar()");
+        Foo();
+    }
 
     public override string ToString()
     {

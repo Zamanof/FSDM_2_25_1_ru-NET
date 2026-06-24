@@ -12,15 +12,24 @@
  
 */
 
-//Base @base = new();
+Base @base = new();
 Derived derived = new("Salam", 25, 65);
 //derived.Show();
-Console.WriteLine(derived);
+//Console.WriteLine(derived);
 // class Derived: Base
+
+// public GrandChild() :this("Hi", 36, 25)
+// public GrandChild(string someProperty, int field1, int field2): base(someProperty, field1, field2)
 
 // public Derived():this(string.Empty, 0, 0)
 // public Derived(string someProperty) :this(someProperty, 0, 0)
 // public Derived(string someProperty, int field1, int field2) : base(field1, field2)
 
 // public Base() : this(0, 0) 
-// public Base(int field1, int field2)
+// public Base(int field1, int field2) - 3
+
+//derived.DerivedBar();
+
+GrandChild grandChild = new();
+grandChild.GrandChildBar();
+
