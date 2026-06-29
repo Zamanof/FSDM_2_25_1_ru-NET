@@ -35,6 +35,7 @@
 Pikachu pikachu = new("Pika Pekson");
 Charmander charmander = new("Zippo");
 
+
 Pokemon[] pokemons = [pikachu, charmander, new Pikachu("Nikto")];
 //Fire[] fires = [charmander, new Charmander("Charm al Cheyx")];
 
@@ -72,3 +73,6 @@ void Foo(Pokemon pokemon)
 {
     pokemon.Sound();
 }
+
+
+
