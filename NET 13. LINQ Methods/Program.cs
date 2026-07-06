@@ -137,6 +137,5 @@ var result = students.Where(s => s.Age > 22).ToList();
 //    Console.WriteLine(item);
 //}
 
-string faculty = "DeDiDn";
-faculty.Where(f => f == 'D').ToList().ForEach(f => Console.WriteLine(f));
+
 #endregion
