@@ -126,7 +126,7 @@ List<Student> students = new List<Student>()
 #endregion
 
 #region Where
-var result = students.Where(s => s.Age > 22).ToList();
+//var result = students.Where(s => s.Age > 22).ToList();
 /*
  var result = from s in students
               where s.Age > 22
@@ -138,4 +138,112 @@ var result = students.Where(s => s.Age > 22).ToList();
 //}
 
 
+#endregion
+
+#region Contains
+//var student = new Student
+//{
+//    FirstName = "Nadir",
+//    LastName = "Zamanov",
+//    Age = 45,
+//    GroupId = 1
+//};
+//Console.WriteLine(students.Contains(student));
+//students.Add(student);
+//Console.WriteLine(students.Contains(student));
+
+#endregion
+
+#region Min, Max, Average, Sum
+//var min = students.Min(s => s.Age);
+//Console.WriteLine(min);
+//var max = students.Max(s => s.Age);
+//Console.WriteLine(max);
+//Console.WriteLine(students.Min(s => s.FirstName));
+//Console.WriteLine(students.Max(s => s.FirstName));
+
+//var average = students.Average(s => s.Age);
+//Console.WriteLine(average);
+
+//var sum = students.Sum(s => s.Age);
+//Console.WriteLine(sum);
+
+#endregion
+
+#region OrderBy, OrderByDescending, ThenBy, ThenByDescending
+//var result = students.OrderBy(s => s.Age).ToList();
+//result.ForEach(Console.WriteLine);
+
+//var resultDesc = students.OrderByDescending(s => s.Age).ToList();
+//resultDesc.ForEach(Console.WriteLine);
+
+
+//var studentsOrdered = students.OrderBy(s=> s.Age).ThenByDescending(s=> s.FirstName).ToList();
+//studentsOrdered.ForEach(Console.WriteLine);
+#endregion
+
+#region Count
+//var count = students.Count(s => s.Age == 20);
+//Console.WriteLine(count);
+#endregion
+
+#region Take, Skip, TakeLast, SkipLast, SkipWhile, TakeWhile
+//var studs = students.Skip(3).Take(3).ToList();
+//studs.ForEach(Console.WriteLine);
+
+//var studs2 = students.SkipWhile(s => s.Age < 30).ToList();
+//studs2.ForEach(Console.WriteLine);
+#endregion
+
+#region All, Any
+//var all = students.All(s => s.Age < 200);
+//Console.WriteLine(all);
+
+//var any = students.Any(s => s.Age > 100);
+//Console.WriteLine(any);
+#endregion
+
+#region Join, GroupJoin
+
+//var result = groups.Join(students, 
+//                            g => g.Id, 
+//                            s => s.GroupId,
+//                            (g, s)=> new
+//                            {
+//                                FirstName = s.FirstName,
+//                                LastName = s.LastName,
+//                                Age = s.Age,
+//                                GroupName = g.Name,
+//                                Faculty = g.Faculty
+//                            });
+
+//foreach (var item in result)
+//{
+//    Console.WriteLine($"""
+//            FirstName: {item.FirstName}
+//            LastName:  {item.LastName}
+//            Age:       {item.Age}
+//            GroupName: {item.GroupName}
+//            Faculty:   {item.Faculty}
+
+//        """);
+//}
+
+//var result = groups.GroupJoin(students,
+//                    g => g.Id,
+//                    s => s.GroupId,
+//                    (g, s) => new
+//                    {
+//                        GroupName = g.Name,
+//                        Students = s
+//                    });
+
+//foreach (var item in result)
+//{
+//    Console.WriteLine($"GroupName: {item.GroupName}");
+//    foreach (var student in item.Students)
+//    {
+//        Console.WriteLine($"    FirstName: {student.FirstName}, LastName: {student.LastName}, Age: {student.Age}");
+//    }
+//}
 #endregion
