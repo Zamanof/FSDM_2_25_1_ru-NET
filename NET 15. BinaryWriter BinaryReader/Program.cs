@@ -16,9 +16,9 @@ string filePath = "BinaryFile.txt";
 #endregion
 
 #region writer
-using FileStream fs = new(filePath, FileMode.Open);
-using BinaryReader binaryReader = new(fs, Encoding.Unicode);
-Console.WriteLine(binaryReader.ReadString());
-Console.WriteLine(binaryReader.ReadSingle());
-Console.WriteLine(binaryReader.ReadInt32());
+//using FileStream fs = new(filePath, FileMode.Open);
+//using BinaryReader binaryReader = new(fs, Encoding.Unicode);
+//Console.WriteLine(binaryReader.ReadString());
+//Console.WriteLine(binaryReader.ReadSingle());
+//Console.WriteLine(binaryReader.ReadInt32());
 #endregion
